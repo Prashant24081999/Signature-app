@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature App</title>
+    <link rel="icon" href="logo.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200">
+    <div class="main mx-20 my-10">
+        <img src="logo.png" alt="logo" class="w-20">
+        <div class="top flex gap-10 justify-between my-10 ml-40 w-3/4">
+            <div class="canvasStyling">
+                <p>Text color picker</p>
+                <input class="form-control w-48" type="color" id="colorPicker">
+            </div>
+            <div class="canvasStyling">
+                <p>Background</p>
+                <input class="form-control w-48" type="color" id="canvasColor">
+            </div>
+            <div class="canvasStyling">
+                <p>Font size</p>
+                <select id="fontSize" class="w-24">
+                    <option value="5">5px</option>
+                    <option value="10">10px</option>
+                    <option value="20">20px</option>
+                    <option value="30">30px</option>
+                    <option value="40">40px</option>
+                    <option value="50">50px</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <canvas width="1100" height="500" class="canvas border-2 border-black ml-48  bg-white" id="myCanvas" ></canvas>
+    <div class="bottom flex gap-6 justify-between my-10 ml-48 w-3/4">
+        <button type="button" class="border-2 border-white px-5 rounded-md py-3 bg-red-700 hover:bg-red-800 hover:text-white" id="clearButton">Clear</button>
+        <button type="button" class="btn btn-success border-2 border-white px-5 rounded-md bg-green-600 hover:bg-green-800 hover:text-white" id="saveButton">Save and Download</button>
+        <button type="button" class="btn btn-warning border-2 border-white px-5 rounded-md bg-yellow-400 hover:bg-yellow-500 hover:text-white" id="retrieveButton">Retrieve saved saignature</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
